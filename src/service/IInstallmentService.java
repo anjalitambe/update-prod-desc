@@ -1,0 +1,14 @@
+package service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface IInstallmentService {
+	
+	double calculateEMI(int duration);
+
+	double calculateNewBal(double emi, double bal);
+
+	double getRemCredits(double cred, double price);
+
+}
